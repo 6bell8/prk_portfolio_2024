@@ -146,17 +146,19 @@ const ReadMe = () => {
                 <li>반갑습니다. 주니어 프론트 개발자 박진성입니다.</li>
                 <li>경험을 소중하게 여기는 개발자가 되려고 노력합니다.</li>
                 <li>문제에 대해 간단하면서도 합리적인 해결책을 찾기 위해 항상 생각합니다.</li>
-                <li>UI/UX 인터랙션 구현에 관심이 많습니다.</li>
-                <li>가독성이 좋은코드가 좋은코드라는 생각을 일념하고 있습니다.</li>
+                <li>가독성이 좋은 코드가 좋은코드라는 생각을 일념하고 있습니다.</li>
               </ul>
               <div className="exp">
                 <h3 className="subtitle01">Experience</h3>
-                <li>더블유로또 코리아</li>
+                <li>
+                  더블유로또 코리아 &nbsp;&nbsp;
+                  <a href="https://www.notion.so/WLOTTO-84a52d287d5542f891f561fb51b7df55" className="detail" target="blank">
+                    - &nbsp;&nbsp;자세히 보기
+                  </a>{' '}
+                </li>
+
                 <p>Frontend Engineer</p>
                 <p className="date">2023.07 ~ </p>
-                <a href="https://www.notion.so/WLOTTO-84a52d287d5542f891f561fb51b7df55" className="detail" target="blank">
-                  자세히 보기
-                </a>
               </div>
               <div className="edu">
                 <h3 className="subtitle02">Education</h3>
