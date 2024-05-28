@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useCallback, useMemo } from 'react';
+import React, { useEffect, useState, useMemo } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Particles, { initParticlesEngine } from '@tsparticles/react';
 import { loadSlim } from '@tsparticles/slim';
@@ -191,8 +191,8 @@ const Repositories = () => {
                 <div className="descBox">
                   <p className="descTitle">Desc</p>
                   <p className="repoDesc">
-                    React와 nextjs를 활용하여 만든 쇼핑몰 웹입니다. 상세정보를 통해 주문하기, 장바구니 담기 등을 활용 할 수 있고, stripe 결제시스템을 도입하였습니다. 서버, 클라이언트를 병합 시켜
-                    배포한 반응형 웹입니다.
+                    nextjs로 만든 쇼핑몰 웹입니다. 상세정보를 통해 주문하기, 장바구니 담기 등을 활용 할 수 있고, stripe 결제시스템을 도입하였습니다. 서버, 클라이언트를 병합 시켜 배포한 반응형
+                    웹입니다.
                   </p>
                 </div>
                 <div className="skillBox">
@@ -266,7 +266,7 @@ const Repositories = () => {
                 <p className="projectName">Movie infomation app</p>
                 <div className="descBox">
                   <p className="descTitle">Desc</p>
-                  <p class="repoDesc">
+                  <p className="repoDesc">
                     TMDB에서 가져온 API를 활용하여, 등장인물 프로필과 줄거리를 요약해서 나열한 app입니다. 영화를 클릭 후 상세정보를 확인 할 수 있습니다. 또한 netilfy.toml 파일을 추가하여 netilfy로
                     배포하였습니다.
                   </p>
@@ -275,11 +275,11 @@ const Repositories = () => {
                   <p className="skillTitle">Skill used in project</p>
                   <div className="frontend">
                     <p className="frontSkillTitle">Frontend</p>
-                    <p class="repoDesc"> Html, React, SCSS</p>
+                    <p className="repoDesc"> Html, React, SCSS</p>
                   </div>
                   <div className="backend">
                     <p className="backSkillTitle">Database</p>
-                    <p class="repoDesc">TMDB </p>
+                    <p className="repoDesc">TMDB </p>
                   </div>
                 </div>
               </li>
@@ -300,53 +300,6 @@ const Repositories = () => {
             </SwiperSlide>
           </Swiper>
         </div>
-
-        {/* <div className="projectsBox">
-          <Swiper modules={[Navigation, Pagination]} navigation pagination={{ clickable: true }} spaceBetween={50} slidesPerView={1}>
-            <ul className="projectsList">
-              <SwiperSlide className="project">
-                <li>
-                  <a href="https://ecommerce-6bell8.vercel.app/" target="_blank" rel="noopener noreferrer">
-                    <img src="../images/img_banner7.jpg" alt="" />
-                    <div className="projectTitle">
-                      <div className="pTitle">
-                        <p>prk-ecommerce</p>
-                        <p>
-                          <span className="material-symbols-outlined">link</span>
-                        </p>
-                      </div>
-                      <p className="psub">*React와 next Js를 활용해서 만든 음향기기 이커머스 웹입니다.</p>
-                    </div>
-                  </a>
-                </li>
-              </SwiperSlide>
-              <SwiperSlide className="project">
-                <li>
-                  <a href="https://restless-wind-2135.fly.dev/" target="_blank" rel="noopener noreferrer">
-                    <img src="../images/img_banner6.jpg" alt="" />
-                    <div className="projectTitle">
-                      <div className="pTitle">
-                        <p>prk-shop</p>
-                        <p>
-                          <span className="material-symbols-outlined">link</span>
-                        </p>
-                      </div>
-                      <p className="psub">*React와 nodejs를 활용해서 만든 신발 쇼핑몰 앱입니다.</p>
-                    </div>
-                  </a>
-                </li>
-              </SwiperSlide>
-            </ul>
-          </Swiper>
-          <div className="slideArrow">
-            <button className="prev">
-              <span className="material-icons">keyboard_arrow_up</span>
-            </button>
-            <button className="next">
-              <span className="material-icons">keyboard_arrow_down</span>
-            </button>
-          </div>
-        </div> */}
       </div>
       <Particles id="tsparticles" particlesLoaded={particlesLoaded} options={options} />
     </div>

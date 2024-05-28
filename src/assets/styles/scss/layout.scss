@@ -231,125 +231,132 @@ body {
       top: 49px;
     }
   }
+  &.invert {
+    span {
+      background-color: #fff;
+    }
+  }
 }
 
-#footer {
-  background-color: $main-color;
-  padding: 50px 0;
-  text-align: center;
-  font-size: 1.2rem;
-  display: flex;
-  flex-direction: column;
-  color: #fff;
-  font-weight: 300;
-  justify-content: center;
-  .phone {
-    font-weight: 300;
-    font-size: 15px;
-    letter-spacing: 1.5px;
-    padding: 25px;
-  }
-  .email {
-    width: clamp(300px, 30vw, 500px);
+#contactMe {
+  .footer {
     display: flex;
-    flex-direction: column;
-    margin: 50px auto;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
     justify-content: center;
-    input[type='text'] {
+    align-items: center;
+    background-color: $main-color;
+    flex-direction: column;
+    .phone {
       color: #fff;
-      margin: 10px;
-      height: 40px;
-      font-family: inherit;
-      font-weight: 300;
+      font-weight: 700;
       font-size: 15px;
-      background: none;
-      border-right: none;
-      border-left: none;
-      border-top: none;
-      border-bottom: 2px solid #fff;
-      border-radius: 2px;
-      padding: 5px 3px;
+      letter-spacing: 1.5px;
+      padding: 25px;
     }
-    input[type='button'] {
-      color: #fff;
-      margin: 40px auto 10px;
-      width: 110px;
-      height: 45px;
-      font-family: inherit;
-      font-weight: 300;
-      font-size: 15px;
-      background: none;
-      border-right: none;
-      border-left: none;
-      border-top: none;
-      border: 3px solid $grass02-bdcolor;
-      border-radius: 7px;
-      padding: 5px 3px;
-      cursor: pointer;
-      &:hover {
-        background: $grass02-color;
-        transition: all 0.5s linear;
-        color: #111;
-        font-weight: 500;
+    .email {
+      width: clamp(300px, 30vw, 500px);
+      display: flex;
+      flex-direction: column;
+      margin: 50px auto;
+      justify-content: center;
+      input[type='text'] {
+        color: #fff;
+        margin: 10px;
+        height: 40px;
+        font-family: inherit;
+        font-weight: 300;
+        font-size: 15px;
+        background: none;
+        border-right: none;
+        border-left: none;
+        border-top: none;
+        border-bottom: 2px solid #fff;
+        border-radius: 2px;
+        padding: 5px 3px;
+      }
+      button[type='submit'] {
+        color: #fff;
+        margin: 40px auto 10px;
+        width: 110px;
+        height: 45px;
+        font-family: inherit;
+        font-weight: 700;
+        font-size: 15px;
+        background: none;
+        border-right: none;
+        border-left: none;
+        border-top: none;
+        border: 3px solid $grass02-bdcolor;
+        border-radius: 7px;
+        padding: 5px 3px;
+        cursor: pointer;
+        &:hover {
+          background: $grass02-color;
+          transition: all 0.25s linear;
+          color: #111;
+          font-weight: 700;
+        }
+      }
+      textarea {
+        color: #fff;
+        margin: 10px;
+        height: auto;
+        font-family: inherit;
+        font-weight: 300;
+        font-size: 15px;
+        background: none;
+        border-right: none;
+        border-left: none;
+        border-top: none;
+        border-bottom: 2px solid #fff;
+        border-radius: 2px;
+        resize: none;
+      }
+      textarea:focus {
+        outline: none;
+      }
+      input:focus {
+        outline: none;
+      }
+      input::placeholder {
+        color: rgb(177, 177, 177);
+        font-weight: 300;
+      }
+      textarea::placeholder {
+        color: rgb(158, 158, 158);
+        font-size: 15px;
+        font-weight: 300;
       }
     }
-    textarea {
-      color: #fff;
-      margin: 10px;
-      height: auto;
-      font-family: inherit;
-      font-weight: 300;
+    a {
+      letter-spacing: 1px;
+    }
+    p {
+      padding: 15px 0;
       font-size: 15px;
-      background: none;
-      border-right: none;
-      border-left: none;
-      border-top: none;
-      border-bottom: 2px solid #fff;
-      border-radius: 2px;
-      resize: none;
+      font-weight: 100;
     }
-    textarea:focus {
-      outline: none;
-    }
-    input:focus {
-      outline: none;
-    }
-    input::placeholder {
-      color: rgb(177, 177, 177);
-      font-weight: 300;
-    }
-    textarea::placeholder {
-      color: rgb(158, 158, 158);
-      font-size: 15px;
-      font-weight: 300;
-    }
-  }
-  a {
-    letter-spacing: 1px;
-  }
-  p {
-    padding: 15px 0;
-    font-size: 15px;
-    font-weight: 100;
-  }
-  img {
-    margin: 20px;
-    width: 50px;
-  }
-  .gitLogo {
     img {
-      filter: brightness(2);
-      width: 30px;
-      &:hover {
-        filter: brightness(1);
-        transition: filter 0.25s ease-in-out;
+      margin: 20px;
+      width: 50px;
+    }
+    .gitLogo {
+      img {
+        filter: brightness(2);
+        width: 30px;
+        &:hover {
+          filter: brightness(1);
+          transition: filter 0.25s ease-in-out;
+        }
       }
     }
-  }
-  .copyright {
-    font-size: 12px;
-    font-weight: 300;
-    color: #ccc;
+    .copyright {
+      font-size: 12px;
+      font-weight: 300;
+      color: #ccc;
+    }
   }
 }
 .scroll-container {

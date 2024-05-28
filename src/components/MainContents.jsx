@@ -80,36 +80,38 @@ const Contents = () => {
 
   return (
     <>
-      <div className="contentsBox">
-        <div className="contents" data-swiper-parallax-scale="1.25">
-          <div className="titleBox">
-            <div className="gitBox">
-              <ul className="calendar">
-                {months.map(month => (
-                  <li key={month}>{month}</li>
-                ))}
-              </ul>
-              <div className="grassBox">
-                {grassColors?.map((col, colIndex) => (
-                  <ul className={`grassCol col${colIndex + 1}`} key={`col${colIndex + 1}`}>
-                    {col.map((color, liIndex) => {
-                      const globalIndex = colIndex * grassColors[0].length + liIndex;
-                      const isPlantVisible = isVisiblePlants.has(globalIndex);
-                      return <li className={`grass ${isPlantVisible ? 'plants' : ''}`} id={color} key={`col${colIndex + 1}-li${liIndex + 1}`}></li>;
-                    })}
-                  </ul>
-                ))}
+      <div className="inner">
+        <div className="contentsBox">
+          <div className="contents" data-swiper-parallax-scale="1.25">
+            <div className="titleBox">
+              <div className="gitBox">
+                <ul className="calendar">
+                  {months.map(month => (
+                    <li key={month}>{month}</li>
+                  ))}
+                </ul>
+                <div className="grassBox">
+                  {grassColors?.map((col, colIndex) => (
+                    <ul className={`grassCol col${colIndex + 1}`} key={`col${colIndex + 1}`}>
+                      {col.map((color, liIndex) => {
+                        const globalIndex = colIndex * grassColors[0].length + liIndex;
+                        const isPlantVisible = isVisiblePlants.has(globalIndex);
+                        return <li className={`grass ${isPlantVisible ? 'plants' : ''}`} id={color} key={`col${colIndex + 1}-li${liIndex + 1}`}></li>;
+                      })}
+                    </ul>
+                  ))}
+                </div>
               </div>
             </div>
+            <img src={aboutJs} alt="aboutJs" className="aboutJS" style={{ opacity: isAboutVisible ? 0 : 1, transition: 'opacity 1s' }} />
           </div>
-          <img src={aboutJs} alt="aboutJs" className="aboutJS" style={{ opacity: isAboutVisible ? 0 : 1, transition: 'opacity 1s' }} />
-        </div>
-        <div className="aboutdesc">
-          <span className="txt">about.js는 Jin Sung의 이니셜인 JS를 차용해서 구상한 포트폴리오입니다. </span>
-        </div>
-        <div className="iconScroll" style={{ opacity: isScrollVisible ? 1 : 0, transition: 'opacity 2s' }}>
-          <span className="icon"></span>
-          <span className="txt">SCROLL</span>
+          <div className="aboutdesc">
+            <span className="txt">about.js는 Jin Sung의 이니셜인 JS를 차용해서 구상한 포트폴리오입니다. </span>
+          </div>
+          <div className="iconScroll" style={{ opacity: isScrollVisible ? 1 : 0, transition: 'opacity 2s' }}>
+            <span className="icon"></span>
+            <span className="txt">SCROLL</span>
+          </div>
         </div>
       </div>
     </>
