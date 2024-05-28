@@ -153,7 +153,7 @@ const ReadMe = () => {
                 <li>
                   더블유로또 코리아 &nbsp;&nbsp;
                   <a href="https://www.notion.so/WLOTTO-84a52d287d5542f891f561fb51b7df55" className="detail" target="blank">
-                    - &nbsp;&nbsp;자세히 보기
+                    자세히 보기
                   </a>{' '}
                 </li>
 
