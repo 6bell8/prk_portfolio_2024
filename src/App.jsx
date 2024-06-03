@@ -51,7 +51,6 @@ const App = () => {
       event.preventDefault();
       const { deltaY } = event;
       const { scrollTop, clientHeight } = containerRef.current;
-
       if (deltaY > 0) {
         containerRef.current.scrollTo({
           top: scrollTop + clientHeight,
@@ -94,6 +93,7 @@ const App = () => {
     };
 
     const observer = new IntersectionObserver(observerCallback, observerOptions);
+
     sectionRefs.current.forEach(section => {
       if (section) observer.observe(section);
     });
@@ -109,7 +109,6 @@ const App = () => {
     sectionRefs.current[index].scrollIntoView({ behavior: 'smooth' });
     setIsOpen(!isOpen);
   };
-
   const toggleOpen = () => {
     setIsOpen(!isOpen);
   };
@@ -117,19 +116,11 @@ const App = () => {
   return (
     <div>
       <header id="header" ref={headerRef}>
-        {isOpen ? (
-          <h1 className="mainLogo" ref={logoRef2}>
-            <a href="/">
-              <img src={pjs02} alt="pjs2" />
-            </a>
-          </h1>
-        ) : (
-          <h1 className="mainLogo" ref={logoRef}>
-            <a href="/">
-              <img src={pjs01} alt="pjs1" />
-            </a>
-          </h1>
-        )}
+        <h1 className="mainLogo" ref={logoRef2}>
+          <a href="/">
+            <img src={isOpen ? pjs02 : pjs01} alt="pjs" />
+          </a>
+        </h1>
         <nav id="gnb" ref={gnbRef}>
           <ul className="mainList">
             {['about.js', 'readMe', 'repositories', 'contactMe'].map((item, index) => (
@@ -141,7 +132,6 @@ const App = () => {
             ))}
           </ul>
         </nav>
-
         <button className={`btnAll ${btnAllState ? 'invert' : ''}`} ref={btnAllRef} onClick={toggleOpen}>
           <span></span>
           <span></span>
