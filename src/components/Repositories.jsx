@@ -170,7 +170,7 @@ const Repositories = () => {
                 </div>
               </li>
               <li className="project">
-                <a href="https://ecommerce-6bell8.vercel.app/" target="_blank" rel="noopener noreferrer">
+                <a href="https://plantshop-git-master-6bell8.vercel.app/" target="_blank" rel="noopener noreferrer">
                   <img src={img_banner8} alt="img_banner8" />
                   <div className="projectTitle">
                     <div className="pTitle">
@@ -208,7 +208,7 @@ const Repositories = () => {
                 </div>
               </li>
               <li className="project">
-                <a href="https://plantshop-git-master-6bell8.vercel.app/" target="_blank" rel="noopener noreferrer">
+                <a href="https://ecommerce-6bell8.vercel.app/" target="_blank" rel="noopener noreferrer">
                   <img src={img_banner7} alt="img_banner7" />
                   <div className="projectTitle">
                     <div className="pTitle">
